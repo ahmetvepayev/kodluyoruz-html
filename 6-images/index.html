@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Part 6 | Images</title>
+</head>
+<body>
+    <p>
+        <img src="https://picsum.photos/600/300" alt="lorem-picsum">
+        <img src="https://picsum.photos/500/300" alt="lorem-picsum2">
+        <img src="https://picsum.photos/600/300" alt="lorem-picsum3">
+    </p>
+
+    <p>
+        <img src="https://picsum.photos/400/300" width="200" height="150" alt="picsum">
+    </p>
+
+    <p>
+        <img src="https://picsum.photos/200/300" alt="picsum" title="Lorem Picsum Image">
+    </p>
+
+    <p>
+        <img src="https://picsum.photos/400/300?random=1" alt="picsum">
+        <img src="https://picsum.photos/400/300?random=1" alt="picsum">
+        <img src="https://picsum.photos/400/300?random=2" alt="picsum">
+        <img src="https://picsum.photos/400/300?random=3" alt="picsum">
+        <img src="https://picsum.photos/400/300?random=abc" alt="picsum">
+        <img src="https://picsum.photos/400/300?random=abc" alt="picsum">
+        <img src="https://picsum.photos/400/300?random=123abc" alt="picsum">
+        <img src="https://picsum.photos/400/300?random=123abc" alt="picsum">
+    </p>
+
+    <p>
+        <a href="https://www.google.com/">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google">
+        </a>
+    </p>
+
+    <p>
+        <img src="https://picsum.photos/400/400" alt="picsum" title="Lorem Picsum with On-Load" onload="picsumLoaded()">
+    </p>
+
+    <p>
+        <picture>
+            <source srcset="https://picsum.photos/1000/400?random=1500" title="Picsum for 1500px width" media="(min-width: 1500px)">
+            <source srcset="https://picsum.photos/700/400?random=1200" title="Picsum for 1200px width" media="(min-width: 1200px)">
+            <source srcset="https://picsum.photos/500/400?random=1000" title="Picsum for 1000px width" media="(min-width: 1000px)">
+
+            <img src="https://picsum.photos/400/400?random=default" title="Default Picsum">
+        </picture>
+    </p>
+</body>
+<script>
+    function picsumLoaded(){
+        console.log("Picsum onload event");
+    }
+</script>
+</html>
